@@ -1,0 +1,20 @@
+{
+  "name": "github-review",
+  "interface": {
+    "displayName": "GitHub Review"
+  },
+  "plugins": [
+    {
+      "name": "github-portfolio-review",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-portfolio-review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
