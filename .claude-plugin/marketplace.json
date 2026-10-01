@@ -1,0 +1,17 @@
+{
+  "name": "github-review",
+  "description": "Evidence-based, read-only GitHub portfolio reviews",
+  "owner": {
+    "name": "Rachael Quisel"
+  },
+  "plugins": [
+    {
+      "name": "github-portfolio-review",
+      "source": "./plugins/github-portfolio-review",
+      "description": "Review a GitHub profile or repository and suggest credible improvements",
+      "displayName": "GitHub Portfolio Review",
+      "category": "Productivity",
+      "tags": ["github", "portfolio", "review"]
+    }
+  ]
+}
