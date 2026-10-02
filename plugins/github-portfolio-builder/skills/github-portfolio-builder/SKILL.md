@@ -1,9 +1,9 @@
 ---
-name: github-portfolio-review
+name: github-portfolio-builder
 description: Review a GitHub profile or repository as professional portfolio evidence and suggest prioritized improvements. Use for GitHub presentation, case studies, reusable examples, attribution, licensing, and claim verification; use a code-review skill for code correctness alone.
 ---
 
-# GitHub Portfolio Review
+# GitHub Portfolio Builder
 
 Review the GitHub profile or repository the user supplies and recommend specific ways to make the work clearer, more credible, and easier for others to evaluate or reuse. This is a read-only review. Do not edit repositories or profile settings, change pins, open pull requests, or publish content.
 

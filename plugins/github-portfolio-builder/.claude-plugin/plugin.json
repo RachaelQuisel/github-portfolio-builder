@@ -1,0 +1,20 @@
+{
+  "name": "github-portfolio-builder",
+  "displayName": "GitHub Portfolio Builder",
+  "version": "0.1.0",
+  "description": "Evidence-based, read-only reviews of GitHub profiles and repositories with prioritized suggestions for professional presentation.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/github-portfolio-builder",
+  "repository": "https://github.com/RachaelQuisel/github-portfolio-builder",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "portfolio",
+    "review"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/RachaelQuisel/github-portfolio-builder#readme",
+  "supportUrl": "https://github.com/RachaelQuisel/github-portfolio-builder/issues"
+}

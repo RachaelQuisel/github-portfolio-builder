@@ -1,4 +1,0 @@
-interface:
-  display_name: "GitHub Portfolio Review"
-  short_description: "Review GitHub work for clear, credible presentation"
-  default_prompt: "Use $github-portfolio-review to review my GitHub profile or repository and suggest the strongest professional improvements."
