@@ -1,8 +1,8 @@
 {
   "name": "github-portfolio-builder",
   "displayName": "GitHub Portfolio Builder",
-  "version": "1.0.0",
-  "description": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label. Read-only.",
+  "version": "1.0.1",
+  "description": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label.",
   "author": {
     "name": "Rachael Quisel"
   },

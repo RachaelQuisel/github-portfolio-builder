@@ -14,16 +14,16 @@ How it works: give it a URL, read the Scope, Assessment, Priorities, and Limits 
 
 Invoke `/github-portfolio-builder:github-portfolio-builder` with a GitHub profile or repository URL.
 
-## Read-only, end to end
+## Review boundaries
 
-The review changes nothing. It does not edit repositories, move profile pins, open issues or pull requests, or publish files. Public reviews need no GitHub token. For a private target, the reviewer uses only access you already have.
+The skill instructs Claude to suggest changes without editing repositories, moving profile pins, opening issues or pull requests, or publishing files. This is an instruction, not an enforced permission boundary. The host's enabled tools and permissions determine what Claude can actually access or change. Public reviews need no GitHub token. For a private target, use only access you already have.
 
-An already configured GitHub MCP can make repository metadata and file checks more reliable, but it is optional. The plugin never installs one and never uses write tools.
+An already configured GitHub MCP can make repository metadata and file checks more reliable, but it is optional. The package does not install one, and the skill instructs Claude to avoid write tools.
 
 Before recommending that you publish anything, it treats case-study rights, third-party attribution, and sensitive details as prerequisites rather than afterthoughts.
 
-## What this plugin reads and sends
+## Data handling
 
-It reads the public GitHub pages for the profile or repository you name, and nothing else. It sends no data to any service beyond the GitHub pages it reads, stores nothing, and has no endpoint of its own. There is no account to create and no token required for a public target. Every action is a read.
+The package contains instructions and reference text, with no bundled executable, hook, MCP server, or telemetry endpoint. The skill asks Claude to inspect the named target and a small set of linked sources when needed. Claude and any enabled browser, GitHub, or MCP tools handle that content under their own terms and settings. For stronger read-only behavior, configure host permissions and any optional GitHub MCP for read access only.
 
 Installation instructions and source are in the [project repository](https://github.com/RachaelQuisel/github-portfolio-builder).

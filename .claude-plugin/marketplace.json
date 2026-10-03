@@ -1,6 +1,6 @@
 {
   "name": "github-portfolio-builder",
-  "description": "Evidence-based, read-only GitHub portfolio reviews",
+  "description": "Evidence-based GitHub portfolio review guidance",
   "owner": {
     "name": "Rachael Quisel"
   },
@@ -8,7 +8,7 @@
     {
       "name": "github-portfolio-builder",
       "source": "./plugins/github-portfolio-builder",
-      "description": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label. Read-only.",
+      "description": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label.",
       "displayName": "GitHub Portfolio Builder",
       "category": "Productivity",
       "tags": [

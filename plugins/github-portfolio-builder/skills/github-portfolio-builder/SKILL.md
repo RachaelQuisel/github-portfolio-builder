@@ -5,7 +5,7 @@ description: Review a GitHub profile or repository as professional portfolio evi
 
 # GitHub Portfolio Builder
 
-Review the GitHub profile or repository the user supplies and recommend specific ways to make the work clearer, more credible, and easier for others to evaluate or reuse. This is a read-only review. Do not edit repositories or profile settings, change pins, open pull requests, or publish content.
+Review the GitHub profile or repository the user supplies and recommend specific ways to make the work clearer, more credible, and easier for others to evaluate or reuse. Treat the request as review-only: do not edit repositories or profile settings, change pins, open pull requests, or publish content. These instructions do not enforce tool permissions; use only the host's available read paths and never call a write tool for this review.
 
 ## Gather current evidence
 
