@@ -28,4 +28,6 @@ The package contains instructions and reference text, with no bundled executable
 
 Public reviews may request GitHub pages or APIs and visit linked websites or demos. The requested URLs and normal request metadata reach those sites. The skill does not call for uploading private repository content to a linked site.
 
+See the [privacy notice](PRIVACY.md) for the full data-handling description.
+
 Installation instructions and source are in the [project repository](https://github.com/RachaelQuisel/github-portfolio-builder).

@@ -38,6 +38,7 @@ For a stricter review session in Claude Code, use host-level tool restrictions o
 The GitHub repository is public and installable as a Claude Code marketplace. A Claude Directory listing is separate: validation, GitHub connection, data-handling and compliance disclosures, submission, and Anthropic review must be completed before calling it listed. No Directory publication is claimed here.
 
 See [verification status](docs/verification.md) for the surfaces and behavior checked so far. Claude chat and Cowork have not yet been tested.
+See the [plugin privacy notice](plugins/github-portfolio-builder/PRIVACY.md) for data handling details.
 
 ## Optional GitHub MCP
 

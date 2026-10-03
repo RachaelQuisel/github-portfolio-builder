@@ -16,5 +16,6 @@
   ],
   "icon": "./icon.png",
   "documentationUrl": "https://github.com/RachaelQuisel/github-portfolio-builder#readme",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/plugins/github-portfolio-builder/PRIVACY.md",
   "supportUrl": "https://github.com/RachaelQuisel/github-portfolio-builder/issues"
 }
