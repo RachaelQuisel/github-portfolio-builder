@@ -23,6 +23,12 @@ Give Claude a public profile or repository URL and invoke the skill:
 
 You can also just ask: “Review my GitHub profile as a professional portfolio and tell me the most valuable improvements.”
 
+### Example prompts
+
+- “Review `https://github.com/jvns` as a public portfolio. Check the visible pins and a small sample of original projects, then give only evidence-backed improvements.”
+- “Review `https://github.com/github/docs` for how clearly its README explains the project, intended users, and reuse path. Link each finding to a current source.”
+- “Review `https://github.com/pallets/flask` as a repository portfolio piece. What does its public presentation establish, and what remains unverified?”
+
 The review links to evidence, separates verified facts from repository claims and inferences, and identifies gaps when a source cannot be inspected. Code correctness and security auditing are separate tasks.
 
 ## Data and permissions

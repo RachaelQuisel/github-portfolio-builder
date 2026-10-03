@@ -15,3 +15,5 @@ Checked October 3, 2026 against the local plugin package.
 | Claude Directory | Listing unverified | Portal validation, source connection, disclosures, submission, review, and visible listing are separate checks. |
 
 These checks establish package validity and sampled review behavior. They do not enforce read-only access. The host controls tool permissions, and a read-only GitHub MCP is optional.
+
+Public GitHub targets require no test account or token. The three public URLs in the README provide sample targets for directory reviewers. Private-repository behavior depends on the reviewer's own host permissions and is outside these checks.

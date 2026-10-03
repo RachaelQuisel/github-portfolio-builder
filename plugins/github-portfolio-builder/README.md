@@ -14,6 +14,8 @@ How it works: give it a URL, read the Scope, Assessment, Priorities, and Limits 
 
 Invoke `/github-portfolio-builder:github-portfolio-builder` with a GitHub profile or repository URL.
 
+Example requests: review the public profile at `https://github.com/jvns` and its visible pins; assess `https://github.com/github/docs` for newcomer clarity and reuse guidance; or assess `https://github.com/pallets/flask` as repository portfolio evidence. Each request should produce source links and state its inspection limits.
+
 ## Review boundaries
 
 The skill instructs Claude to suggest changes without editing repositories, moving profile pins, opening issues or pull requests, or publishing files. This is an instruction, not an enforced permission boundary. The host's enabled tools and permissions determine what Claude can actually access or change. Public reviews need no GitHub token. For a private target, use only access you already have.
