@@ -26,4 +26,6 @@ Before recommending that you publish anything, it treats case-study rights, thir
 
 The package contains instructions and reference text, with no bundled executable, hook, MCP server, or telemetry endpoint. The skill asks Claude to inspect the named target and a small set of linked sources when needed. Claude and any enabled browser, GitHub, or MCP tools handle that content under their own terms and settings. For stronger read-only behavior, configure host permissions and any optional GitHub MCP for read access only.
 
+Public reviews may request GitHub pages or APIs and visit linked websites or demos. The requested URLs and normal request metadata reach those sites. The skill does not call for uploading private repository content to a linked site.
+
 Installation instructions and source are in the [project repository](https://github.com/RachaelQuisel/github-portfolio-builder).

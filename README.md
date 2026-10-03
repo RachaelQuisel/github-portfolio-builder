@@ -29,6 +29,8 @@ The review links to evidence, separates verified facts from repository claims an
 
 This package contains a skill and reference text, with no bundled executable, hook, MCP server, analytics endpoint, or telemetry. The skill asks Claude to inspect the target profile or repository and the limited linked sources needed to support a finding. Claude and any tools you enable process the URLs and content under their own terms and account settings. A private target can expose private content to the Claude session, so review its permissions before use.
 
+The review may request public GitHub pages or APIs and visit websites or demos linked from the target. Those requests disclose the requested URL and normal request metadata to GitHub or the linked site's operator. The skill does not call for uploading private repository content to a linked site.
+
 For a stricter review session in Claude Code, use host-level tool restrictions or a read-only GitHub MCP configuration. The plugin's prose alone cannot prevent writes when the host gives Claude write-capable tools. The plugin does not require a token for a public target.
 
 ## Distribution status
