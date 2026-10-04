@@ -5,11 +5,24 @@ description: Review a GitHub profile or repository as professional portfolio evi
 
 # GitHub Portfolio Builder
 
+Read [the conversation and writing rules](references/conversation-and-writing.md) before responding. Apply them to all user-facing text.
+
+## Start the conversation
+
+If the request has no details, ask:
+
+1. "Which GitHub profile or repository should I review?"
+2. "Who should understand the work: employers, collaborators, users, or someone else?"
+3. "What would you like the review to focus on?"
+
+A supplied target and clear review request may be enough. Ask only about an unresolved choice that would change the review. Resolve an ambiguous target before inspecting it. This conversation gathers the review scope. It does not authorize edits or publication.
+
+
 Review the GitHub profile or repository the user supplies and recommend specific ways to make the work clearer, more credible, and easier for others to evaluate or reuse. Treat the request as review-only: do not edit repositories or profile settings, change pins, open pull requests, or publish content. These instructions do not enforce tool permissions; use only the host's available read paths and never call a write tool for this review.
 
 ## Gather current evidence
 
-1. Identify the target URL. If the user names a GitHub account or repository without a link, resolve it before reviewing. Ask only if the target is genuinely ambiguous.
+1. Identify the target URL. If the user names a GitHub account or repository without a link, resolve it before reviewing. Ask only if the target is ambiguous.
    A repository review assesses that repository for its own intended audience; do not assume the requester owns it, contributed to it, or wants to claim its work in a personal portfolio.
 2. Inspect the live profile or repository and its current default branch. Follow [source-routing.md](references/source-routing.md): public pages or APIs work without a GitHub MCP; use an already configured GitHub MCP's read tools when helpful. Do not require, install, or authenticate an MCP for a public review. For a private target, use only access the user already has.
 3. Bound the inspection. For a profile, start with the profile and its README, then sample a few representative original or pinned repositories; state which ones you chose. For a repository, inspect the entry point and only the supporting files needed for the user's question. Read [review-checks.md](references/review-checks.md) for the focused checklist.

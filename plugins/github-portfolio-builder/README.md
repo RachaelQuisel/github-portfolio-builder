@@ -1,35 +1,27 @@
 # GitHub Portfolio Builder
 
-See your GitHub the way a hiring manager does, before they do.
+Review a GitHub profile or repository as professional portfolio evidence. Receive an assessment and up to five useful improvements with direct source links.
 
-Point it at a profile or a repository. It inspects the public pages, tells you what the work actually proves to a visitor, and hands back up to five ranked changes with a direct evidence link behind each one.
+Start with `/github-portfolio-builder:github-portfolio-builder`. If details are missing, the plugin asks for the target, intended audience, and review focus. It waits for required answers. A clear target and review request can be enough to start.
 
-- Labels every claim verified, reported, inferred, or unresolved, so your README's numbers never pass as checked facts
-- Ranks up to five changes by what a prospective employer, collaborator, or user would learn from them
-- Names up to three things worth adding, with the proof, permission, or attribution each one needs first
-- States what it could not inspect instead of guessing past it
-- Says plainly when a mature repository needs nothing, rather than manufacturing five priorities
+- Checks current pages, files, and relevant linked sources.
+- Labels verified facts, reported claims, interpretations, and gaps.
+- Ranks changes by what a visitor needs to understand.
+- Gives fewer findings when the evidence supports fewer.
+- Identifies proof, permission, and attribution needed for suggested additions.
 
-How it works: give it a URL, read the Scope, Assessment, Priorities, and Limits sections, then fix the top item.
+Read [how it works](GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md).
 
-Invoke `/github-portfolio-builder:github-portfolio-builder` with a GitHub profile or repository URL.
+## Data and permissions
 
-Example requests: review the public profile at `https://github.com/jvns` and its visible pins; assess `https://github.com/github/docs` for newcomer clarity and reuse guidance; or assess `https://github.com/pallets/flask` as repository portfolio evidence. Each request should produce source links and state its inspection limits.
+The plugin instructs the assistant to review without editing repositories, changing profile pins, opening pull requests, or publishing files. The host's tools and permissions determine what actions are technically possible.
 
-## Review boundaries
+Public reviews can use GitHub pages or its public data interface without a token. Private targets require access you already have. The package does not install a connection or request credentials in chat. An existing GitHub connection is optional.
 
-The skill instructs Claude to suggest changes without editing repositories, moving profile pins, opening issues or pull requests, or publishing files. This is an instruction, not an enforced permission boundary. The host's enabled tools and permissions determine what Claude can actually access or change. Public reviews need no GitHub token. For a private target, use only access you already have.
+The review can request GitHub pages and relevant linked sites. The requested addresses and normal request metadata reach those sites. The host processes review content under its own terms and settings. The package has no publisher-operated service or telemetry. It does not request uploading private repository content to a linked site.
 
-An already configured GitHub MCP can make repository metadata and file checks more reliable, but it is optional. The package does not install one, and the skill instructs Claude to avoid write tools.
+See [the privacy notice](PRIVACY.md). Installation instructions and source are in [the project repository](https://github.com/RachaelQuisel/github-portfolio-builder).
 
-Before recommending that you publish anything, it treats case-study rights, third-party attribution, and sensitive details as prerequisites rather than afterthoughts.
+## License
 
-## Data handling
-
-The package contains instructions and reference text, with no bundled executable, hook, MCP server, or telemetry endpoint. The skill asks Claude to inspect the named target and a small set of linked sources when needed. Claude and any enabled browser, GitHub, or MCP tools handle that content under their own terms and settings. For stronger read-only behavior, configure host permissions and any optional GitHub MCP for read access only.
-
-Public reviews may request GitHub pages or APIs and visit linked websites or demos. The requested URLs and normal request metadata reach those sites. The skill does not call for uploading private repository content to a linked site.
-
-See the [privacy notice](PRIVACY.md) for the full data-handling description.
-
-Installation instructions and source are in the [project repository](https://github.com/RachaelQuisel/github-portfolio-builder).
+MIT. See [LICENSE](LICENSE).

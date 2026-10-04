@@ -1,4 +1,4 @@
-# Privacy notice — GitHub Portfolio Builder
+# Privacy notice: GitHub Portfolio Builder
 
 Last updated October 3, 2026.
 

@@ -11,7 +11,7 @@ claude plugin marketplace add RachaelQuisel/github-portfolio-builder
 claude plugin install github-portfolio-builder@github-portfolio-builder
 ```
 
-Then invoke `/github-portfolio-builder:github-portfolio-builder` with a GitHub profile or repository URL. This repository will also be submitted to the Claude plugin directory, which has a separate review and publication process.
+Then invoke `/github-portfolio-builder:github-portfolio-builder`. Supply a GitHub profile or repository URL. If details are missing, the plugin asks up to three questions about the target, intended audience, and review focus. It waits for required answers and remembers supplied choices. This repository will also be submitted to the Claude plugin directory, which has a separate review and publication process.
 
 ## Use
 
@@ -23,7 +23,7 @@ Give Claude a public profile or repository URL and invoke the skill:
 
 You can also just ask: “Review my GitHub profile as a professional portfolio and tell me the most valuable improvements.”
 
-### Example prompts
+### Example requests
 
 - “Review `https://github.com/jvns` as a public portfolio. Check the visible pins and a small sample of original projects, then give only evidence-backed improvements.”
 - “Review `https://github.com/github/docs` for how clearly its README explains the project, intended users, and reuse path. Link each finding to a current source.”
@@ -55,3 +55,5 @@ A browser remains useful for checking the visible profile, pins, rendered README
 ## Package
 
 The marketplace manifest is at `.claude-plugin/marketplace.json`. It points to the plugin and skill under `plugins/github-portfolio-builder/`.
+
+Read [how it works](plugins/github-portfolio-builder/GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md) for the complete review process.

@@ -13,7 +13,7 @@ Use the checks that fit the target. Report only observations supported by the in
 
 - Can a first-time visitor understand the problem, intended audience, creator's role, approach, and result from the README?
 - Are setup, prerequisites, data assumptions, and limitations clear enough for the claimed level of reuse?
-- Are examples or fixtures genuinely safe to publish and clearly fictional or anonymized? Do not call a sample importable or executable without checking it.
+- Are examples or fixtures safe to publish and clearly fictional or anonymized? Do not call a sample importable or executable without checking it.
 - Do linked demos and documentation resolve? A deck, screenshot, recording, source file, and live deployment establish different things. Verify the type and content of each before citing it.
 - Check a supposed omission at a direct file path or complete repository tree. If only a partial page rendered, mark the omission unresolved.
 - For a recording, inspect the actual media before stating its length, timestamps, or visible contents. Public video frames can still expose names, records, or browser addresses.
