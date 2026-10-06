@@ -4,6 +4,10 @@ A review-focused plugin for assessing a GitHub profile or repository as a profes
 
 The reviewer can check current public GitHub pages without a GitHub token. A private target requires access you already have. The skill instructs Claude to review without editing GitHub, changing pins, opening pull requests, or publishing files. Those instructions are not a technical permission boundary; the host's tool permissions control what Claude can do.
 
+## Claude Marketplace submission
+
+Submitted to the [Claude Marketplace partner waitlist](https://claude.com/marketplace-partners) on **October 5, 2026**, through XRAY Automation. Submission confirmation was received; Marketplace eligibility and listing have not yet been confirmed.
+
 ## Install in Claude Code
 
 ```sh
