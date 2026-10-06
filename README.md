@@ -35,6 +35,9 @@ You can also just ask: “Review my GitHub profile as a professional portfolio a
 
 The review links to evidence, separates verified facts from repository claims and inferences, and identifies gaps when a source cannot be inspected. Code correctness and security auditing are separate tasks.
 
+See a [finished example review](docs/example-review.md) of a public Airtable webinar repository.
+It shows the assessment, one evidence-backed priority, and the limits a reviewer should state.
+
 ## Data and permissions
 
 This package contains a skill and reference text, with no bundled executable, hook, MCP server, analytics endpoint, or telemetry. The skill asks Claude to inspect the target profile or repository and the limited linked sources needed to support a finding. Claude and any tools you enable process the URLs and content under their own terms and account settings. A private target can expose private content to the Claude session, so review its permissions before use.
