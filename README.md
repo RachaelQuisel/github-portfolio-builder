@@ -4,9 +4,15 @@ A review-focused plugin for assessing a GitHub profile or repository as a profes
 
 The reviewer can check current public GitHub pages without a GitHub token. A private target requires access you already have. The skill instructs Claude to review without editing GitHub, changing pins, opening pull requests, or publishing files. Those instructions are not a technical permission boundary; the host's tool permissions control what Claude can do.
 
-## Claude Marketplace submission
+## Claude Marketplace and Directory status
 
-Submitted to the [Claude Marketplace partner waitlist](https://claude.com/marketplace-partners) on **October 5, 2026**, through XRAY Automation. Submission confirmation was received; Marketplace eligibility and listing have not yet been confirmed.
+Status updated on **October 12, 2026**:
+
+- **Marketplace partner waitlist:** submitted on **October 5, 2026**, through XRAY Automation. Submission confirmation was received; partner-program acceptance has not been confirmed.
+- **Claude Directory:** current review and public-listing status remain **unverified**. The [earlier directory review record](https://claude.ai/directory/manage/plugins/611e353e-bed6-4959-8f32-d24f37881603) was not accessible from the current organization on October 12: “That submission wasn’t found in this organization.” This does not establish rejection or removal; the original submitting account or organization may be required.
+- **Icon review follow-up:** commit [`021198c`](https://github.com/RachaelQuisel/github-portfolio-builder/commit/021198ca0bbebc1ac530e42d701c39993fdf0f25) was pushed to address the earlier icon-inspection hold. A follow-up scan result and Anthropic approval have not been verified.
+
+The [Marketplace partner waitlist](https://claude.com/marketplace-partners), Claude Code installation and Claude Directory review are separate stages. These are dated observations, not a claim that the plugin is publicly listed.
 
 ## Install in Claude Code
 
@@ -15,7 +21,7 @@ claude plugin marketplace add RachaelQuisel/github-portfolio-builder
 claude plugin install github-portfolio-builder@github-portfolio-builder
 ```
 
-Then invoke `/github-portfolio-builder:github-portfolio-builder`. Supply a GitHub profile or repository URL. If details are missing, the plugin asks up to three questions about the target, intended audience, and review focus. It waits for required answers and remembers supplied choices. This repository will also be submitted to the Claude plugin directory, which has a separate review and publication process.
+Then invoke `/github-portfolio-builder:github-portfolio-builder`. Supply a GitHub profile or repository URL. If details are missing, the plugin asks up to three questions about the target, intended audience, and review focus. It waits for required answers and remembers supplied choices. Claude Directory review and publication are separate from marketplace installation; see [submission status](#claude-marketplace-and-directory-status).
 
 ## Use
 
@@ -48,7 +54,7 @@ For a stricter review session in Claude Code, use host-level tool restrictions o
 
 ## Distribution status
 
-The GitHub repository is public and installable as a Claude Code marketplace. A Claude Directory listing is separate: validation, GitHub connection, data-handling and compliance disclosures, submission, and Anthropic review must be completed before calling it listed. No Directory publication is claimed here.
+The GitHub repository is public and installable as a Claude Code marketplace. See [Claude Marketplace and Directory status](#claude-marketplace-and-directory-status) for the confirmed waitlist submission and the limits of the latest Directory check. Public Directory publication has not been verified.
 
 See [verification status](docs/verification.md) for the surfaces and behavior checked so far. Claude chat and Cowork have not yet been tested.
 See the [plugin privacy notice](plugins/github-portfolio-builder/PRIVACY.md) for data handling details.
