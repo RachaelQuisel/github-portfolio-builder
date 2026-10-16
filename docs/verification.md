@@ -1,6 +1,16 @@
 # Verification status
 
-Checked October 3, 2026 against the local plugin package.
+Historical checks below were recorded October 3, 2026 against the local plugin package. They are not a verification of every later revision.
+
+## Current verification gap: October 16, 2026
+
+The current plugin manifest is version **1.1.0**. The recorded fresh-install test below covers **1.0.1**, not 1.1.0. A new installation and behavior test for 1.1.0 is still required. The audit environment did not have Claude Code, so it did not run `claude plugin validate` or an installation test.
+
+The October 16 repository inspection confirmed parseable plugin and marketplace JSON, matching package names, a resolvable marketplace package path, one SKILL.md, and the referenced icon file. These are structural checks only, not a security scan, live behavior test, or Anthropic approval.
+
+The icon fix is committed at [021198c](https://github.com/RachaelQuisel/github-portfolio-builder/commit/021198ca0bbebc1ac530e42d701c39993fdf0f25). Its follow-up portal scan and approval remain unverified. The publisher portal requires access through the submitting account and organization.
+
+## Historical checks
 
 | Surface | Status | Evidence |
 | --- | --- | --- |
