@@ -15,7 +15,8 @@
         "github",
         "portfolio",
         "review"
-      ]
+      ],
+      "version": "1.1.3"
     }
   ]
 }

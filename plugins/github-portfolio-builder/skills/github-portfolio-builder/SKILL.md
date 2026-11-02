@@ -1,9 +1,23 @@
 ---
 name: github-portfolio-builder
+version: 1.1.3
 description: Review a GitHub profile or repository as professional portfolio evidence and suggest prioritized improvements. Use for GitHub presentation, case studies, reusable examples, attribution, licensing, and claim verification; use a code-review skill for code correctness alone.
 ---
 
 # GitHub Portfolio Builder
+
+## Purpose in plain English
+
+This skill helps you review a GitHub profile or project and suggest improvements supported by the work that is visible.
+
+## How to explain the result
+
+For a client-facing explanation, use ordinary words and the requested format. Explain unfamiliar abbreviations. Name what each number counts and explain its practical meaning. Keep internal identifiers out of the explanation. Keep necessary technical details in the working steps and technical references.
+
+## Following the process
+
+Use the process below. Preserve its conditions, commands, checks, and approval rules. Use information the user already supplied. Follow the existing questions or stopping rules when required information is missing.
+
 
 Read [the conversation and writing rules](references/conversation-and-writing.md) before responding. Apply them to all user-facing text.
 

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "GitHub Portfolio Builder",
+        "logo": "./icon.png",
+        "longDescription": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label.",
+        "shortDescription": "Improve your GitHub portfolio"
+      }
+    }
+  },
+  "homepage": "https://github.com/RachaelQuisel/github-portfolio-builder",
+  "keywords": [
+    "github",
+    "portfolio",
+    "review"
+  ],
+  "license": "MIT",
+  "name": "github-portfolio-builder",
+  "repository": "https://github.com/RachaelQuisel/github-portfolio-builder",
+  "version": "1.1.3"
+}
