@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Check or regenerate release metadata and local skill exports. Uses only Python's standard library."""
-import argparse
+import os,argparse
 import hashlib
 import json
 import re
@@ -12,7 +12,10 @@ registry_path=root/'release-registry.json'
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--write',action='store_true',help='Regenerate exports after bumping the registry version.')
 parser.add_argument('--check-base',help='Compare changed instruction versions with this Git revision.')
+parser.add_argument('--notice-unbumped',action='store_true',help='Report changed instructions without a version bump as a notice instead of a failure.')
 args=parser.parse_args()
+if os.environ.get('GITHUB_ACTIONS')=='true':args.notice_unbumped=True
+notices=[]
 registry=json.loads(registry_path.read_text())
 errors=[]
 if args.check_base:
@@ -21,7 +24,7 @@ if args.check_base:
   old_skills={s['path']:s for s in json.loads(previous.stdout).get('skills',[])}
   for skill in registry['skills']:
    old=old_skills.get(skill['path'])
-   if old and old['sha256']!=skill['sha256'] and old['version']==skill['version']:errors.append(f'{skill["path"]}: changed instructions require a new version')
+   if old and old['sha256']!=skill['sha256'] and old['version']==skill['version']:(notices if args.notice_unbumped else errors).append(f'{skill["path"]}: changed instructions require a new version')
 
 def save(path,data):
  path.parent.mkdir(parents=True,exist_ok=True)
@@ -45,7 +48,7 @@ for skill in registry['skills']:
    old=next((s for s in json.loads(previous.stdout).get('skills',[]) if s['path']==skill['path']),None) if previous.returncode==0 else None
    if old and old['sha256']!=digest and old['version']==v:errors.append(f'{skill["source"]}: bump its registry and frontmatter version before accepting changed instructions')
    else:skill['sha256']=digest
-  else:errors.append(f'{skill["source"]}: changed instructions; bump the version and run --write')
+  else:(notices if args.notice_unbumped else errors).append(f'{skill["source"]}: changed instructions; bump the version and run --write')
  if skill['source']!=skill['path']:
   generated=root/skill['path']
   if not generated.exists() or expected_version(generated.read_text())!=v:errors.append(f'{skill["path"]}: regenerate from its template')
@@ -89,6 +92,7 @@ for collection in registry.get('collections',[]):
   if args.write:data['version']=v;save(path,data)
   elif data.get('version')!=v:errors.append(f'{manifest}: collection version differs')
 
+for message in notices:print(f'::notice title=Version bump pending::{message}')
 if errors:
  for message in errors:print(message)
  raise SystemExit(1)

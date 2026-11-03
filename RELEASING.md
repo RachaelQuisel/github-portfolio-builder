@@ -8,7 +8,7 @@ The registry is the version authority. Each plugin and its bundled skills use th
 
 1. Edit the canonical instructions and their guide. Use plain English for explanations. Preserve exact commands, conditions, permissions, and required product terms.
 2. Bump the affected version in the registry and skill frontmatter. For a plugin, bump its package and all bundled skills together. Edit a template when the registry names one, then run that repository's generator.
-3. Run `python3 scripts/release_sync.py --write`, then `python3 scripts/release_sync.py`. The first command updates local exports and manifests. The check rejects changed instructions accepted without a version bump.
+3. Run `python3 scripts/release_sync.py --write`, then `python3 scripts/release_sync.py`. The first command updates local exports and manifests. Run locally, the check rejects changed instructions accepted without a version bump. In GitHub Actions the script switches to `--notice-unbumped` on its own, so a pending version bump shows as a notice and the run still passes. Out-of-sync or invalid files still fail.
 4. Run the checks required by the changed behavior. Review the diff, commit, and push without overwriting other work.
 5. Update the existing ChatGPT plugin by its saved identity. Build its files from these canonical sources. Read back the saved version and instructions. Do not create a replacement plugin for an update.
 6. Update the existing Claude listing to the pushed source. Check the portal's validation and review state. A GitHub push is not proof of approval or a live listing.
