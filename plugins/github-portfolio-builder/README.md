@@ -2,13 +2,13 @@
 
 Review a GitHub profile or repository as professional portfolio evidence. Receive an assessment and up to five useful improvements with direct source links.
 
-Start with `/github-portfolio-builder:github-portfolio-builder`. If details are missing, the plugin asks for the target, intended audience, and review focus. It waits for required answers. A clear target and review request can be enough to start.
+Start with `/github-portfolio-builder:github-portfolio-builder`. If details are missing, the plugin asks for the target, intended audience and review focus. It waits for required answers. A clear target and review request can be enough to start.
 
-- Checks current pages, files, and relevant linked sources.
-- Labels verified facts, reported claims, interpretations, and gaps.
+- Checks current pages, files and relevant linked sources.
+- Labels verified facts, reported claims, interpretations and gaps.
 - Ranks changes by what a visitor needs to understand.
 - Gives fewer findings when the evidence supports fewer.
-- Identifies proof, permission, and attribution needed for suggested additions.
+- Identifies proof, permission and attribution needed for suggested additions.
 
 Read [how it works](GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md).
 
@@ -35,7 +35,7 @@ The [partner waitlist](https://claude.com/marketplace-partners) is for Claude-po
 
 ## Data and permissions
 
-The plugin instructs the assistant to review without editing repositories, changing profile pins, opening pull requests, or publishing files. The host's tools and permissions determine what actions are technically possible.
+The plugin instructs the assistant to review without editing repositories, changing profile pins, opening pull requests or publishing files. The host's tools and permissions determine what actions are technically possible.
 
 Public reviews can use GitHub pages or its public data interface without a token. Private targets require access you already have. The package does not install a connection or request credentials in chat. An existing GitHub connection is optional.
 

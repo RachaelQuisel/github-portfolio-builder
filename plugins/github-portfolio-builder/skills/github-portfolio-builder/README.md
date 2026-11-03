@@ -4,7 +4,7 @@ This skill helps you review a GitHub profile or project and suggest improvements
 
 ## What to share
 
-Describe the result you need and share the relevant files, notes, or examples you want this skill to use.
+Describe the result you need and share the relevant files, notes or examples you want this skill to use.
 
 ## How to start
 
@@ -12,4 +12,4 @@ Select this skill and describe your request. The assistant uses the information 
 
 ## Detailed guidance
 
-The [working instructions](SKILL.md) describe the skill's steps, required tools, and limits.
+The [working instructions](SKILL.md) describe the skill's steps, required tools and limits.

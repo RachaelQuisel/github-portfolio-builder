@@ -1,8 +1,8 @@
 # GitHub Portfolio Builder
 
-A review-focused plugin for assessing a GitHub profile or repository as a professional portfolio. It gives a short assessment, sourced and prioritized improvements, and a few worthwhile additions when they can be shared responsibly.
+A review-focused plugin for assessing a GitHub profile or repository as a professional portfolio. It gives a short assessment, sourced and prioritized improvements and a few worthwhile additions when they can be shared responsibly.
 
-The reviewer can check current public GitHub pages without a GitHub token. A private target requires access you already have. The skill instructs Claude to review without editing GitHub, changing pins, opening pull requests, or publishing files. Those instructions are not a technical permission boundary; the host's tool permissions control what Claude can do.
+The reviewer can check current public GitHub pages without a GitHub token. A private target requires access you already have. The skill instructs Claude to review without editing GitHub, changing pins, opening pull requests or publishing files. Those instructions are not a technical permission boundary; the host's tool permissions control what Claude can do.
 
 ## Claude Marketplace and Directory status
 
@@ -32,7 +32,7 @@ claude plugin marketplace add RachaelQuisel/github-portfolio-builder
 claude plugin install github-portfolio-builder@github-portfolio-builder
 ```
 
-Then invoke `/github-portfolio-builder:github-portfolio-builder`. Supply a GitHub profile or repository URL. If details are missing, the plugin asks up to three questions about the target, intended audience, and review focus. It waits for required answers and remembers supplied choices. Claude Directory review and publication are separate from marketplace installation; see [submission status](#claude-marketplace-and-directory-status).
+Then invoke `/github-portfolio-builder:github-portfolio-builder`. Supply a GitHub profile or repository URL. If details are missing, the plugin asks up to three questions about the target, intended audience and review focus. It waits for required answers and remembers supplied choices. Claude Directory review and publication are separate from marketplace installation; see [submission status](#claude-marketplace-and-directory-status).
 
 ## Use
 
@@ -47,17 +47,17 @@ You can also just ask: “Review my GitHub profile as a professional portfolio a
 ### Example requests
 
 - “Review `https://github.com/jvns` as a public portfolio. Check the visible pins and a small sample of original projects, then give only evidence-backed improvements.”
-- “Review `https://github.com/github/docs` for how clearly its README explains the project, intended users, and reuse path. Link each finding to a current source.”
+- “Review `https://github.com/github/docs` for how clearly its README explains the project, intended users and reuse path. Link each finding to a current source.”
 - “Review `https://github.com/pallets/flask` as a repository portfolio piece. What does its public presentation establish, and what remains unverified?”
 
-The review links to evidence, separates verified facts from repository claims and inferences, and identifies gaps when a source cannot be inspected. Code correctness and security auditing are separate tasks.
+The review links to evidence, separates verified facts from repository claims and inferences and identifies gaps when a source cannot be inspected. Code correctness and security auditing are separate tasks.
 
 See a [finished example review](docs/example-review.md) of a public Airtable webinar repository.
-It shows the assessment, one evidence-backed priority, and the limits a reviewer should state.
+It shows the assessment, one evidence-backed priority and the limits a reviewer should state.
 
 ## Data and permissions
 
-This package contains a skill and reference text, with no bundled executable, hook, MCP server, analytics endpoint, or telemetry. The skill asks Claude to inspect the target profile or repository and the limited linked sources needed to support a finding. Claude and any tools you enable process the URLs and content under their own terms and account settings. A private target can expose private content to the Claude session, so review its permissions before use.
+This package contains a skill and reference text, with no bundled executable, hook, MCP server, analytics endpoint or telemetry. The skill asks Claude to inspect the target profile or repository and the limited linked sources needed to support a finding. Claude and any tools you enable process the URLs and content under their own terms and account settings. A private target can expose private content to the Claude session, so review its permissions before use.
 
 The review may request public GitHub pages or APIs and visit websites or demos linked from the target. Those requests disclose the requested URL and normal request metadata to GitHub or the linked site's operator. The skill does not call for uploading private repository content to a linked site.
 
@@ -72,9 +72,9 @@ See the [plugin privacy notice](plugins/github-portfolio-builder/PRIVACY.md) for
 
 ## Optional GitHub MCP
 
-The plugin works without an MCP for public reviews. If you already use [GitHub's official MCP server](https://github.com/github/github-mcp-server), its read tools can make repository file, tree, release, and profile checks more reliable. Configure it in [read-only mode](https://github.com/github/github-mcp-server/blob/main/docs/server-configuration.md) and enable only the toolsets you need, such as `repos`, `users`, and `git`. GitHub publishes a [setup guide for Claude](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-claude.md). The plugin does not install the server or require a token for public repositories; its skill instructs Claude not to call write tools.
+The plugin works without an MCP for public reviews. If you already use [GitHub's official MCP server](https://github.com/github/github-mcp-server), its read tools can make repository file, tree, release and profile checks more reliable. Configure it in [read-only mode](https://github.com/github/github-mcp-server/blob/main/docs/server-configuration.md) and enable only the toolsets you need, such as `repos`, `users` and `git`. GitHub publishes a [setup guide for Claude](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-claude.md). The plugin does not install the server or require a token for public repositories; its skill instructs Claude not to call write tools.
 
-A browser remains useful for checking the visible profile, pins, rendered README, and linked demos; repository metadata alone cannot establish how those pages appear to a visitor.
+A browser remains useful for checking the visible profile, pins, rendered README and linked demos; repository metadata alone cannot establish how those pages appear to a visitor.
 
 ## Package
 
