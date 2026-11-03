@@ -32,6 +32,10 @@ Use this when the user asks for a portfolio page, not only a review. Iterates on
 
 After the 8 La Maison cards, in its own section, add one card for the Friendly task tracker. Frame it as a general task tool for property managers, cleaners or inspectors across many houses, not as a La Maison automation. Say plainly that her own rental is a single home. Video: `https://airbnbai.rent/assets/friendly-task-tracker.mp4`. Thumbnail: a frame pulled with ffmpeg or `friendly-task-tracker-poster.webp`. Source: `RachaelQuisel/Airtable-AI-Webinar`.
 
+## Workshops section
+
+After the task tracker and before the closing book-a-call, add a short Workshops section. Reuse the airbnbai.rent wording: "I lead Automate Your Business workshops at Kiva and online with XRAY." (Kiva links to `https://luma.com/bzdez39g` and XRAY to `https://workspace.xray.tech/events`), then the three points "Hands-on walkthrough", "Q & A" and "Leave with a tangible solution". Link the materials repo `RachaelQuisel/Automate-Your-Business` and feature at most two workshops. Lead with The Colleague Audit (`workshops/2026-09-30-the-colleague-audit`), which is built from how Grok Bot was built in a month. The second is The Loop Audit (`workshops/2026-09-30-the-loop-audit`). Do not list every workshop.
+
 ## Patterns that make portfolios stand out
 
 Researched Nov 2, 2026. Apply these on every page:
