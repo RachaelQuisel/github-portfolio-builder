@@ -1,8 +1,8 @@
 {
   "name": "github-portfolio-builder",
   "displayName": "GitHub Portfolio Builder",
-  "version": "1.1.4",
-  "description": "Review your GitHub profile or repository and get specific, source-linked improvements ranked for employers, clients, or collaborators.",
+  "version": "1.1.5",
+  "description": "Build a stronger GitHub portfolio. Highlight your best work, explain your contributions, and get a prioritized plan for what to improve.",
   "author": {
     "name": "Rachael Quisel"
   },

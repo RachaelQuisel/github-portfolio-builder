@@ -1,10 +1,12 @@
 # GitHub Portfolio Builder
 
-**Know what to improve before you share your GitHub portfolio.**
+**Build a GitHub portfolio that shows what you can do.**
 
-Share a GitHub profile or repository with Claude. Get a clear assessment of how it presents your work, followed by specific improvements ranked for the people you want to reach.
+GitHub Portfolio Builder helps you highlight your strongest work, explain your contributions, and show employers, clients, and collaborators why your projects matter. Share your profile or a repository to get a prioritized plan for what to feature, improve, and add, grounded in your actual work.
 
-Use it before a job application, a client conversation, or sharing a project with potential collaborators. The review focuses on what a visitor can understand, verify, and use.
+Use it to prepare your portfolio for a job application, a client pitch, or your next collaboration.
+
+Claude's directory reports [over 5,000 installs as of November 1, 2026](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/verification.md#directory-install-count).
 
 ## What you get
 
