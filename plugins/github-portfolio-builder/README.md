@@ -1,48 +1,69 @@
 # GitHub Portfolio Builder
 
-Review a GitHub profile or repository as professional portfolio evidence. Receive an assessment and up to five useful improvements with direct source links.
+**Know what to improve before you share your GitHub portfolio.**
 
-Start with `/github-portfolio-builder:github-portfolio-builder`. If details are missing, the plugin asks for the target, intended audience, and review focus. It waits for required answers. A clear target and review request can be enough to start.
+Share a GitHub profile or repository with Claude. Get a clear assessment of how it presents your work, followed by specific improvements ranked for the people you want to reach.
 
-- Checks current pages, files, and relevant linked sources.
-- Labels verified facts, reported claims, interpretations, and gaps.
-- Ranks changes by what a visitor needs to understand.
-- Gives fewer findings when the evidence supports fewer.
-- Identifies proof, permission, and attribution needed for suggested additions.
+Use it before a job application, a client conversation, or sharing a project with potential collaborators. The review focuses on what a visitor can understand, verify, and use.
 
-Read [how it works](GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md).
+## What you get
 
-## Claude Marketplace and Directory status
+- **A short assessment.** See what the inspected profile or project communicates about the work.
+- **Up to five priorities.** Each recommendation includes a source link, why it matters to your audience, and a concrete change to make.
+- **Worthwhile additions.** When the evidence supports them, get up to three suggestions for examples, case studies, or other work worth sharing. Each includes any permission, privacy, or attribution requirements.
+- **Clear limits.** Know what was checked, what the repository only claims, and what could not be verified.
 
-Status updated on **October 12, 2026**:
+The review uses your actual pages and files. It checks whether a recommended addition already exists and gives fewer suggestions when fewer are useful.
 
-- **Marketplace partner waitlist:** submitted on **October 5, 2026**, through XRAY Automation. Submission confirmation was received; partner-program acceptance has not been confirmed.
-- **Claude Directory:** current review and public-listing status remain **unverified**. The [earlier directory review record](https://claude.ai/directory/manage/plugins/611e353e-bed6-4959-8f32-d24f37881603) was not accessible from the current organization on October 12: “That submission wasn’t found in this organization.” This does not establish rejection or removal; the original submitting account or organization may be required.
-- **Icon review follow-up:** commit [`021198c`](https://github.com/RachaelQuisel/github-portfolio-builder/commit/021198ca0bbebc1ac530e42d701c39993fdf0f25) was pushed to address the earlier icon-inspection hold. A follow-up scan result and Anthropic approval have not been verified.
+## What it looks at
 
-The [Marketplace partner waitlist](https://claude.com/marketplace-partners), Claude Code installation and Claude Directory review are separate stages. These are dated observations, not a claim that the plugin is publicly listed.
+For a **profile review**, Claude checks your bio, profile README, visible pins, and a small selection of projects. It looks for a clear explanation of your role and representative work.
 
-### Evidence audit: October 16, 2026
+For a **repository review**, Claude checks the README and the supporting material needed for your question. That can include examples, setup instructions, licenses, documentation, and linked demos. It looks for what helps someone understand the project or decide whether to use it.
 
-- **Partner waitlist:** Submission confirmation recorded for 2026-10-05, through XRAY Automation. This is retained repository evidence, not a newly inspected confirmation receipt.
-- **Plugin directory:** Icon fix pushed; re-scan and review outcome unverified.
-- **Approved:** Unverified. **Publicly listed:** Unverified. No verified public listing URL is recorded.
-- **Verification limit:** The publisher portal requires sign-in. Public searches and the connected mailbox search did not establish approval; missing results are not proof of rejection or non-publication.
-- **Next action:** Open the existing submission in the original submitting Claude account and organization; record its current decision and any public listing URL.
+[See an example review](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/example-review.md). It shows a specific recommendation with supporting links and clearly stated limits. The example is illustrative, not a new runtime test.
 
-The [partner waitlist](https://claude.com/marketplace-partners) is for Claude-powered enterprise products. It is separate from plugin-directory review and GitHub marketplace installation. A waitlist application is not directory approval.
+## Start a review
 
+After installing the plugin, share a GitHub URL and tell Claude who the work is for. You can add a focus, such as the README, project examples, or how clearly your role comes across.
 
-## Data and permissions
+Try one of these requests:
 
-The plugin instructs the assistant to review without editing repositories, changing profile pins, opening pull requests, or publishing files. The host's tools and permissions determine what actions are technically possible.
+> Review my GitHub profile for employers hiring automation developers. What should I improve first? [profile URL]
 
-Public reviews can use GitHub pages or its public data interface without a token. Private targets require access you already have. The package does not install a connection or request credentials in chat. An existing GitHub connection is optional.
+> Review this project for a potential client. Can they understand the problem it solves and my contribution? [repository URL]
 
-The review can request GitHub pages and relevant linked sites. The requested addresses and normal request metadata reach those sites. The host processes review content under its own terms and settings. The package has no publisher-operated service or telemetry. It does not request uploading private repository content to a linked site.
+> Review this repository for someone who wants to reuse it. Check the explanation, examples, and setup instructions. [repository URL]
 
-See [the privacy notice](PRIVACY.md). Installation instructions and source are in [the project repository](https://github.com/RachaelQuisel/github-portfolio-builder).
+You can also invoke the skill directly:
 
-## License
+```text
+/github-portfolio-builder:github-portfolio-builder https://github.com/OWNER/REPOSITORY
+```
 
-MIT. See [LICENSE](LICENSE).
+Claude asks for missing details only when they would change the review. You receive recommendations in chat and choose which changes to make.
+
+## Install in Claude Code
+
+Run these commands in your terminal with Claude Code installed:
+
+```sh
+claude plugin marketplace add RachaelQuisel/github-portfolio-builder
+claude plugin install github-portfolio-builder@github-portfolio-builder
+```
+
+Start a new Claude Code session after installation. These commands follow the [Claude Code installation guide](https://code.claude.com/docs/en/discover-plugins). GitHub installation and Claude Directory publication are separate; see the [dated verification record](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/verification.md) for the versions checked.
+
+## Access and scope
+
+Public reviews need access to current GitHub pages, but do not require a GitHub token. Private reviews use access you already have. An existing GitHub connection is optional.
+
+The skill is designed to recommend changes without editing repositories, changing pins, opening pull requests, or publishing files. Your host's tool permissions determine what actions are technically possible. Use read-only permissions if you need to enforce that boundary.
+
+The review assesses presentation and supporting evidence. It does not establish code correctness, security, measured business results, or hiring outcomes. The [privacy notice](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/plugins/github-portfolio-builder/PRIVACY.md) explains how the host and requested sites process review content.
+
+## Help and details
+
+Maintained by Rachael Quisel. [Ask a question or report a problem](https://github.com/RachaelQuisel/github-portfolio-builder/issues).
+
+Read [how the review works](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/plugins/github-portfolio-builder/GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md) or the [working instructions](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md). Released under the [MIT license](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/LICENSE).

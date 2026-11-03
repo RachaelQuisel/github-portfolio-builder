@@ -1,6 +1,6 @@
 ---
 name: github-portfolio-builder
-version: 1.1.3
+version: 1.1.4
 description: Review a GitHub profile or repository as professional portfolio evidence and suggest prioritized improvements. Use for GitHub presentation, case studies, reusable examples, attribution, licensing, and claim verification; use a code-review skill for code correctness alone.
 ---
 
