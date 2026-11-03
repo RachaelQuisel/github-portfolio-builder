@@ -70,4 +70,4 @@ Keep the review useful even if evidence is sparse: say what can be assessed, ide
 
 ## Build a portfolio page
 
-When the user asks for a portfolio page instead of a review, follow [references/portfolio-page.md](references/portfolio-page.md): the owner's opening line first, a bold hero with the headline stats stated once, then one card per automation with what it handles, a link, a thumbnail from its video, and time saved only when a source states it.
+When the user asks for a portfolio page instead of a review, follow [references/portfolio-page.md](references/portfolio-page.md): the owner's opening line first, a bold hero with the headline stats stated once, then one card per automation with what it handles, a link, a thumbnail from its video and time saved only when a source states it.
