@@ -2,7 +2,7 @@
 
 ## November 3, 2026
 
-The source release is **1.1.7**. This release adds portfolio page output: when asked for a page instead of a review, the skill follows `references/portfolio-page.md` and a sample page is in `docs/sample-portfolio-page.html`. Release 1.1.6 added the benefits-first README and update instructions.
+The source release is **1.1.8**. This release removes Oxford commas from the READMEs, release guide and skill instructions. The review behavior is unchanged. Release 1.1.7 added portfolio page output (`references/portfolio-page.md`, sample in `docs/sample-portfolio-page.html`).
 
 Before this documentation release, the authenticated Claude publisher portal showed **1.1.3** at commit `8196f3112ad2b7f65c3b69c7144577adfab310a0` as approved after its security scan. The serving public version was **1.1.0** at `d54312ec485c2d2089e52c65e1269d2ea336dd2f`. The portal required an Anthropic reviewer to publish the update. That observation does not establish approval or publication of 1.1.6.
 
