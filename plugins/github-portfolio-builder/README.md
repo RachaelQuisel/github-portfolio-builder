@@ -25,36 +25,42 @@ For a **repository review**, Claude checks the README and the supporting materia
 
 [See an example review](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/example-review.md). It shows a specific recommendation with supporting links and clearly stated limits. The example is illustrative, not a new runtime test.
 
-## Start a review
-
-After installing the plugin, share a GitHub URL and tell Claude who the work is for. You can add a focus, such as the README, project examples, or how clearly your role comes across.
-
-Try one of these requests:
-
-> Review my GitHub profile for employers hiring automation developers. What should I improve first? [profile URL]
-
-> Review this project for a potential client. Can they understand the problem it solves and my contribution? [repository URL]
-
-> Review this repository for someone who wants to reuse it. Check the explanation, examples, and setup instructions. [repository URL]
-
-You can also invoke the skill directly:
-
-```text
-/github-portfolio-builder:github-portfolio-builder https://github.com/OWNER/REPOSITORY
-```
-
-Claude asks for missing details only when they would change the review. You receive recommendations in chat and choose which changes to make.
-
 ## Install in Claude Code
 
-Run these commands in your terminal with Claude Code installed:
+**First installation:** run these commands at your terminal prompt, such as the line ending in `%` on a Mac. You need [Claude Code installed](https://code.claude.com/docs/en/setup).
 
 ```sh
 claude plugin marketplace add RachaelQuisel/github-portfolio-builder
 claude plugin install github-portfolio-builder@github-portfolio-builder
 ```
 
-Start a new Claude Code session after installation. These commands follow the [Claude Code installation guide](https://code.claude.com/docs/en/discover-plugins). GitHub installation and Claude Directory publication are separate; see the [dated verification record](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/verification.md) for the versions checked.
+**Already installed?** Use the [update instructions](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/installation.md#update-an-existing-installation). They cover GitHub installations and local checkouts. If you see an `extraKnownMarketplaces` source mismatch, follow that guide instead of adding the marketplace again.
+
+## Start a review
+
+Open Claude Code by running this command **in your terminal**:
+
+```sh
+claude
+```
+
+Once Claude Code opens, type your request **in its conversation prompt**. Share your GitHub URL and tell Claude who the work is for. For example:
+
+> Use GitHub Portfolio Builder to improve my profile for employers hiring automation developers. What should I feature and improve first? [your profile URL]
+
+> Review this project for a potential client. Can they understand the problem it solves and my contribution? [your repository URL]
+
+> Review this repository for someone who wants to reuse it. Check the explanation, examples, and setup instructions. [your repository URL]
+
+You can also type the command below **inside Claude Code**. Replace the example URL with your profile or repository URL. A command starting with `/` here is a Claude Code prompt, not a terminal command.
+
+```text
+/github-portfolio-builder:github-portfolio-builder https://github.com/RachaelQuisel/github-portfolio-builder
+```
+
+After updating an installed plugin, start a new Claude Code session or type `/reload-plugins` in the current conversation. Claude asks for missing details only when they would change the review. You receive recommendations in chat and choose which changes to make.
+
+For installation errors, see the [setup and troubleshooting guide](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/installation.md). GitHub installation and Claude Directory publication are separate; the [verification record](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/verification.md) lists the versions checked.
 
 ## Access and scope
 

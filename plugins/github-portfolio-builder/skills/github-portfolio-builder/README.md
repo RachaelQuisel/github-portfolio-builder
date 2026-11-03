@@ -10,7 +10,7 @@ After installing the plugin, ask:
 
 > Review this GitHub repository for a potential client. What should I improve so they can understand the work and my contribution? [repository URL]
 
-In Claude Code, you can also use `/github-portfolio-builder:github-portfolio-builder` followed by the target URL.
+Open Claude Code by running `claude` in your terminal. In the Claude Code conversation, type `/github-portfolio-builder:github-portfolio-builder` followed by the target URL. Do not enter that slash command at the terminal prompt.
 
 Public reviews need access to current pages. Private reviews require access you already have. The assistant provides recommendations in chat. The host's permissions control which tools it can use.
 

@@ -5,7 +5,7 @@
     {
       "name": "github-portfolio-builder",
       "root": "plugins/github-portfolio-builder",
-      "version": "1.1.5",
+      "version": "1.1.6",
       "manifests": [
         "plugins/github-portfolio-builder/plugin.json",
         "plugins/github-portfolio-builder/.claude-plugin/plugin.json",
@@ -19,8 +19,8 @@
   "skills": [
     {
       "path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md",
-      "version": "1.1.5",
-      "sha256": "362c6a6c0917142689eb1edf356c870a8e22d688c00dcbc22c3f9d43ce0af05e",
+      "version": "1.1.6",
+      "sha256": "ad286965cc6c8fc0df3374f62e595eb2632cbb227812abc930141dc0a8f8c417",
       "source": "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md",
       "guide": "plugins/github-portfolio-builder/skills/github-portfolio-builder/README.md"
     }

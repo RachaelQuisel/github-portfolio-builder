@@ -2,9 +2,9 @@
 
 ## November 3, 2026
 
-The source release is **1.1.5**. This release rewrites the README, user guide, and listing descriptions. The skill's review behavior is unchanged; its version was updated to match the package.
+The source release is **1.1.6**. This release includes the benefits-first README and listing descriptions. It also separates terminal commands from Claude Code prompts and adds instructions for updating existing installations. The skill's review behavior is unchanged; its version was updated to match the package.
 
-Before this documentation release, the authenticated Claude publisher portal showed **1.1.3** at commit `8196f3112ad2b7f65c3b69c7144577adfab310a0` as approved after its security scan. The serving public version was **1.1.0** at `d54312ec485c2d2089e52c65e1269d2ea336dd2f`. The portal required an Anthropic reviewer to publish the update. That observation does not establish approval or publication of 1.1.5.
+Before this documentation release, the authenticated Claude publisher portal showed **1.1.3** at commit `8196f3112ad2b7f65c3b69c7144577adfab310a0` as approved after its security scan. The serving public version was **1.1.0** at `d54312ec485c2d2089e52c65e1269d2ea336dd2f`. The portal required an Anthropic reviewer to publish the update. That observation does not establish approval or publication of 1.1.6.
 
 The [existing publisher record](https://claude.ai/directory/manage/plugins/611e353e-bed6-4959-8f32-d24f37881603) retains the same listing identity. Its publisher view requires owner access. The [repository marketplace](https://github.com/RachaelQuisel/github-portfolio-builder) is the source for the documented Claude Code installation commands.
 
