@@ -1,8 +1,8 @@
 # Review your GitHub portfolio
 
-Share a GitHub profile or repository URL. Tell the assistant who you want to reach, such as employers, clients, collaborators or people who may reuse the project.
+Share a GitHub profile or repository URL. Tell the assistant who you want to reach, such as employers, clients, collaborators, or people who may reuse the project.
 
-You receive a short assessment and up to five ranked improvements. Each improvement includes a source link, why it matters and a concrete change to make. The review may also suggest work worth sharing when there is enough evidence and it can be shared responsibly.
+You receive a short assessment and up to five ranked improvements. Each improvement includes a source link, why it matters, and a concrete change to make. The review may also suggest work worth sharing when there is enough evidence and it can be shared responsibly.
 
 ## Start here
 

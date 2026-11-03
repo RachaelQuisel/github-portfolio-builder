@@ -2,26 +2,26 @@
 
 **Build a GitHub portfolio that shows what you can do.**
 
-GitHub Portfolio Builder helps you highlight your strongest work, explain your contributions and show employers, clients and collaborators why your projects matter. Share your profile or a repository to get a prioritized plan for what to feature, improve and add, grounded in your actual work.
+GitHub Portfolio Builder helps you highlight your strongest work, explain your contributions, and show employers, clients, and collaborators why your projects matter. Share your profile or a repository to get a prioritized plan for what to feature, improve, and add, grounded in your actual work.
 
-Use it to prepare your portfolio for a job application, a client pitch or your next collaboration.
+Use it to prepare your portfolio for a job application, a client pitch, or your next collaboration.
 
 Claude's directory reports [over 5,000 installs as of November 1, 2026](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/verification.md#directory-install-count).
 
 ## What you get
 
 - **A short assessment.** See what the inspected profile or project communicates about the work.
-- **Up to five priorities.** Each recommendation includes a source link, why it matters to your audience and a concrete change to make.
-- **Worthwhile additions.** When the evidence supports them, get up to three suggestions for examples, case studies or other work worth sharing. Each includes any permission, privacy or attribution requirements.
-- **Clear limits.** Know what was checked, what the repository only claims and what could not be verified.
+- **Up to five priorities.** Each recommendation includes a source link, why it matters to your audience, and a concrete change to make.
+- **Worthwhile additions.** When the evidence supports them, get up to three suggestions for examples, case studies, or other work worth sharing. Each includes any permission, privacy, or attribution requirements.
+- **Clear limits.** Know what was checked, what the repository only claims, and what could not be verified.
 
 The review uses your actual pages and files. It checks whether a recommended addition already exists and gives fewer suggestions when fewer are useful.
 
 ## What it looks at
 
-For a **profile review**, Claude checks your bio, profile README, visible pins and a small selection of projects. It looks for a clear explanation of your role and representative work.
+For a **profile review**, Claude checks your bio, profile README, visible pins, and a small selection of projects. It looks for a clear explanation of your role and representative work.
 
-For a **repository review**, Claude checks the README and the supporting material needed for your question. That can include examples, setup instructions, licenses, documentation and linked demos. It looks for what helps someone understand the project or decide whether to use it.
+For a **repository review**, Claude checks the README and the supporting material needed for your question. That can include examples, setup instructions, licenses, documentation, and linked demos. It looks for what helps someone understand the project or decide whether to use it.
 
 [See an example review](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/example-review.md). It shows a specific recommendation with supporting links and clearly stated limits. The example is illustrative, not a new runtime test.
 
@@ -50,7 +50,7 @@ Once Claude Code opens, type your request **in its conversation prompt**. Share 
 
 > Review this project for a potential client. Can they understand the problem it solves and my contribution? [your repository URL]
 
-> Review this repository for someone who wants to reuse it. Check the explanation, examples and setup instructions. [your repository URL]
+> Review this repository for someone who wants to reuse it. Check the explanation, examples, and setup instructions. [your repository URL]
 
 You can also type the command below **inside Claude Code**. Replace the example URL with your profile or repository URL. A command starting with `/` here is a Claude Code prompt, not a terminal command.
 
@@ -66,9 +66,9 @@ For installation errors, see the [setup and troubleshooting guide](https://githu
 
 Public reviews need access to current GitHub pages, but do not require a GitHub token. Private reviews use access you already have. An existing GitHub connection is optional.
 
-The skill is designed to recommend changes without editing repositories, changing pins, opening pull requests or publishing files. Your host's tool permissions determine what actions are technically possible. Use read-only permissions if you need to enforce that boundary.
+The skill is designed to recommend changes without editing repositories, changing pins, opening pull requests, or publishing files. Your host's tool permissions determine what actions are technically possible. Use read-only permissions if you need to enforce that boundary.
 
-The review assesses presentation and supporting evidence. It does not establish code correctness, security, measured business results or hiring outcomes. The [privacy notice](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/plugins/github-portfolio-builder/PRIVACY.md) explains how the host and requested sites process review content.
+The review assesses presentation and supporting evidence. It does not establish code correctness, security, measured business results, or hiring outcomes. The [privacy notice](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/plugins/github-portfolio-builder/PRIVACY.md) explains how the host and requested sites process review content.
 
 ## Help and details
 
