@@ -6,13 +6,13 @@
     "developerName": "Rachael Quisel",
     "displayName": "GitHub Portfolio Builder",
     "logo": "./icon.png",
-    "longDescription": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label.",
+    "longDescription": "Build a GitHub portfolio that shows what you can do. Highlight your strongest work, explain your contributions, and show employers, clients, and collaborators why your projects matter. Share your profile or a repository to get a prioritized plan for what to feature, improve, and add, grounded in your actual work.\n\nClaude's directory reports over 5,000 installs as of November 1, 2026.\n\nGet a short assessment and up to five ranked improvements. Each recommendation includes a source link, why it matters to your audience, and a concrete change to make. When the evidence supports them, the review also suggests up to three additions worth sharing, with any permission, privacy, or attribution requirements.\n\nProfile reviews cover the bio, README, visible pins, and selected projects. Repository reviews focus on the explanation and supporting material, such as examples, setup instructions, and linked demos. The review states what was checked and what remains uncertain.\n\nPublic reviews do not require a GitHub token. Private reviews use access you already have. The skill is designed to provide recommendations without editing or publishing; the host's tool permissions control what actions are technically possible. This is a presentation review, not a code or security audit.",
     "shortDescription": "Improve your GitHub portfolio",
     "defaultPrompt": null
   },
   "name": "github-portfolio-builder",
-  "version": "1.1.3",
-  "description": "Reviews a GitHub profile or repository as portfolio evidence. Returns up to five ranked improvements, each with a direct evidence link and a verified, reported, inferred, or unresolved label.",
+  "version": "1.1.7",
+  "description": "Build a stronger GitHub portfolio. Highlight your best work, explain your contributions, and get a prioritized plan for what to improve.",
   "author": {
     "name": "Rachael Quisel"
   },
