@@ -6,7 +6,9 @@ GitHub Portfolio Builder helps you highlight your strongest work, explain your c
 
 Use it to prepare your portfolio for a job application, a client pitch, or your next collaboration.
 
-Claude's directory reports [over 5,000 installs as of November 1, 2026](https://github.com/RachaelQuisel/github-portfolio-builder/blob/main/docs/verification.md#directory-install-count).
+Anthropic’s publisher dashboard reports **10,745 all-time installs through November 22, 2026**.
+
+**Try it:** In Claude, paste your GitHub profile URL and ask, “What should I feature or improve first?”
 
 ## What you get
 
