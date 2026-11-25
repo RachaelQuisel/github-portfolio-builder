@@ -1,6 +1,6 @@
 ---
 name: github-portfolio-builder
-version: 1.1.9
+version: 1.1.10
 description: Review a GitHub profile or repository as professional portfolio evidence and suggest prioritized improvements. Use for GitHub presentation, case studies, reusable examples, attribution, licensing, and claim verification; use a code-review skill for code correctness alone.
 ---
 
@@ -70,4 +70,4 @@ Keep the review useful even if evidence is sparse: say what can be assessed, ide
 
 ## Build a portfolio page
 
-When the user asks for a portfolio page instead of a review, follow [references/portfolio-page.md](references/portfolio-page.md): the owner's opening line first, a bold hero with the headline stats stated once, then one card per automation with what it handles, a link, a thumbnail from its video, and time saved only when a source states it.
+When the user asks for a portfolio page instead of a review, follow [references/portfolio-page.md](references/portfolio-page.md): the owner's opening line first, a bold hero with the headline stats stated once, then one card per project with what it handles, a link, a video or image when the owner has one, and time saved only when a source states it. Every line, figure, link, and contact detail on the page comes from the page's owner.
